@@ -990,6 +990,15 @@ public class MyResource {
 	}
 
 	private String buildJson(ArrayList<ArrayList<Employee>> employee, int checkL, boolean search) {
+		
+		try
+			{
+			    Thread.sleep((long)(Math.random() * 5000));
+			}
+			catch(InterruptedException ex)
+			{
+			    Thread.currentThread().interrupt();
+			}
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
 		if(seting.getSecurity() == null || seting.getSecurity().isEmpty()) {
 			getSetting();
