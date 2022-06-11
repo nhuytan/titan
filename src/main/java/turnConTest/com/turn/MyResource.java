@@ -993,7 +993,7 @@ public class MyResource {
 		
 		try
 			{
-			    Thread.sleep((long)(Math.random() * 11000));
+			    Thread.sleep((long)(Math.random() * 1));
 			}
 			catch(InterruptedException ex)
 			{
